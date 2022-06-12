@@ -22,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #10002B;
+    background: radial-gradient(circle, #5533d2 9%, #d294e9 83%);
   
 }
   .header div img{
@@ -40,6 +41,7 @@
       font-size: 40px;
       padding-top: 30px;
       margin: 0px;
+      
 }
  .header h1 span{
     color: red;
@@ -64,17 +66,17 @@
   .header li {
       padding: 3px;
       font-size: 20px;
-      border: solid 2px white;
+      border: solid 2px black;
       border-radius:  0 10px;
       margin: 40px;
 
 }
   .header li a {
-    color: #E0AAFF;
+    color: black;
     text-decoration: none;
 }
   .header li a:hover {
-    color: grey;
+    
     font-weight: 900;
     
 }
@@ -88,6 +90,7 @@
         grid-area: section1;
         background-color: #240046;
         color: white;
+        
 }
   .section1 h2{
      font-size: 40px;
@@ -118,6 +121,7 @@
 .section2 { grid-area: section2;
 background-color: #9D4EDD; 
 color: white;
+background-image: linear-gradient(to bottom, #240046,#9D4EDD );
 }
 .section2 div{
     display: flex;
@@ -149,6 +153,9 @@ color: white;
 .footer { grid-area: footer;
     background-color: #E0AAFF;
     text-align: center;
+    background-image: linear-gradient(to bottom, #9D4EDD, #E0AAFF );
+    margin-top: 1px;
+    
 }
 .footer i {
     color: #fff;
@@ -169,6 +176,7 @@ color: white;
 
 main {
     background-color: #240046;
+    background-image: linear-gradient(to bottom, #240046,#9D4EDD );
     }
 
 /* --- NOVEDADES----- */
@@ -295,6 +303,7 @@ main {
     grid-gap: 40px;
     padding: 40px;
     color: #E0AAFF;
+    background-image: linear-gradient(to bottom, #240046,#9D4EDD );
     
 }
 
