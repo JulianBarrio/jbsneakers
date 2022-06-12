@@ -23,6 +23,7 @@
     justify-content: space-between;
     background-color: #10002B;
     background: radial-gradient(circle, #5533d2 9%, #d294e9 83%);
+    
   
 }
   .header div img{
@@ -52,6 +53,7 @@
     padding: 5px;
     display: inline-block;
     font-family: sans-serif;
+    transform: skew(-3deg);
 }
   .header nav ul {
       display: flex;
@@ -69,6 +71,10 @@
       border: solid 2px black;
       border-radius:  0 10px;
       margin: 40px;
+      animation-name: cambioColor;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+
 
 }
   .header li a {
@@ -76,7 +82,7 @@
     text-decoration: none;
 }
   .header li a:hover {
-    
+    transition: 0.2s;
     font-weight: 900;
     
 }
@@ -146,6 +152,9 @@ background-image: linear-gradient(to bottom, #240046,#9D4EDD );
 }
 .section2 img {
     max-width: 400px;
+    animation-name: moov;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 /*  ----- FOOTER------- */
@@ -166,6 +175,7 @@ background-image: linear-gradient(to bottom, #240046,#9D4EDD );
     border-radius: 50px;
     background-color: black;
     display: inline-block;
+    animation: spin 10s linear infinite;
 
 }
 .footer i:hover {
@@ -357,6 +367,9 @@ textarea {
     border-radius: 3px;
     outline: 0px;
 }
+.formulario :focus{
+    background-color: grey;
+}
 
 .formulario form textarea {
     max-width: 530px;
@@ -380,7 +393,47 @@ textarea {
 
 .formulario .btn-enviar:hover {
     background: #0706003e;
+    transform: scale(1.1);
 }
+
+/*ANIMACIONES*/
+@keyframes
+
+ cambioColor{
+     0%{background-color: #f8f5f5;}
+     25%{background-color: #817f7f;}
+     50%{background-color: #555555;}
+     100%{background-color: #323232;}}
+
+@keyframes moov {
+   
+    0%{
+        transform: rotate(0deg);
+        transition: .5s;
+    }
+    25%{
+        transform: rotate(15deg);
+        transition: .5s;
+    }
+    50%{
+        transform: rotate(0deg);
+        transition: .5s;
+    }
+    75%{
+        transform: rotate(-15deg);
+        transition: .5s;
+    }
+    100%{
+        transform: rotate(360deg);
+        transition: .5s;
+    }
+}
+@keyframes spin { 
+    100% { 
+      transform: rotateZ(360deg);
+    }
+  }
+
 
 /* mobile last a tablet */
 @media (max-width: 1024px) {
