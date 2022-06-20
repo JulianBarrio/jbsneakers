@@ -161,22 +161,38 @@ background-image: linear-gradient(to bottom, #240046,#9D4EDD );
 
 .footer { grid-area: footer;
     background-color: #E0AAFF;
-    text-align: center;
     background-image: linear-gradient(to bottom, #9D4EDD, #E0AAFF );
     margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
     
 }
 .footer i {
     color: #fff;
-    padding: 12px;
-    margin: 20px;
-    font-size: 50px;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 2rem;
     border: #fff 2px solid;
     border-radius: 50px;
-    background-color: black;
-    display: inline-block;
-    animation: spin 10s linear infinite;
+    background-color: black;   
 
+}
+.contacto {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.contacto i {
+    font-size: 0.8rem;
+    background-color: transparent;
+    color: black;
+    border: transparent;
+    margin: 0;
+}
+.contacto a {
+    color: black;
 }
 .footer i:hover {
     background-color: grey;
@@ -532,4 +548,10 @@ textarea {
     padding: 20px;
     margin-bottom: 15px;
 }
+.footer {
+    flex-direction: column-reverse;
+    }
+.redes {
+    text-align: center;
+}    
 }
